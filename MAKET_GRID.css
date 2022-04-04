@@ -1,0 +1,97 @@
+.main {
+    display: grid;
+    grid-template-columns: 200px 3fr 1.2fr;
+    grid-template-rows: 90px 1fr 110px;
+}
+header,
+footer { 
+    grid-column: 1 / 4;
+}
+header {
+    font-size: 1.5rem;
+    font-weight: bold; 
+    font-family: sans-serif;
+    text-align: center;
+    background-color: rgb(116, 150, 195);
+    align-self: center;
+}
+.leftcol {
+    background-color: yellowgreen;
+}
+.menu {
+    list-style-type: none;
+    font-family: sans-serif;
+    padding: 10px;
+}
+button {
+    width: 180px;
+    background-color: rgb(97, 141, 177);
+}
+content {
+    padding: 10px;
+    background: url('ball.png') repeat-y right;
+    background-color: rgb(131, 122, 122);
+    font-family: sans-serif;  
+}
+.image {
+    float: left; 
+    margin: 10px; 
+    width: 50%;
+}
+.rightcol {
+    text-align: left;
+    background-color:rgb(201, 199, 86); 
+    padding-left: 10px; 
+    font-family: sans-serif;
+}
+footer {
+    padding: 10px; 
+    background-color:rgb(201, 147, 86); 
+    font-family: sans-serif;
+}
+.club {
+    width: 90px;
+    height: 40px;
+    display: inline-block;
+    border: solid rgb(184, 31, 31) 1px;
+    position: fixed;
+    left: 85%;
+    top: 35px;
+    background-color: rgb(235, 101, 83);
+    text-align: center;
+}
+@media all and (max-width:320px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 1fr 200px 200px;
+    }
+    header {
+        font-size: 1rem;
+    }
+    content {
+        background-image: none;
+    }
+    .rightcol {
+        display: none;
+    }
+    .leftcol {
+     grid-row: 3;
+    }
+    .image {
+       width: 100%;
+       margin: 0;
+    }
+    .club {
+        left: 55%;
+        top: 137px;
+    }
+        li {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .club {
+        left: 55%;
+        top: 200px;
+    }
+    
+}
